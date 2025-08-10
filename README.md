@@ -24,6 +24,11 @@ And uses google calander api to set up events from the pdf
     event = service.events().insert(calendarId='primary', body=event).execute()
     print('Event created: %s' % (event.get('htmlLink')))
 ```
+takes schedule from this 
+![old pdf image](images/Screenshot.png)
+to this 
+![New Graph](images/schdule.png)
+
 
 # ⬇️ Installation and running
 ---
