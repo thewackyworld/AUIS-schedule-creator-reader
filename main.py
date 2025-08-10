@@ -116,7 +116,7 @@ if __name__ == '__main__':
                         creds.refresh(Request())
                     else:
                         flow = InstalledAppFlow.from_client_secrets_file(
-                            'credintials.json', SCOPES)
+                            'credentials.json', SCOPES)
                         creds = flow.run_local_server(port=0)
                     with open('token.json', 'w') as token:
                         token.write(creds.to_json())
@@ -206,7 +206,7 @@ if __name__ == '__main__':
                 plt.text(0.5, start[x] + last[x]/2, course_text, ha="center", va="center", fontsize=8, weight='bold')      #course title
                 plt.text(0.5, start[x] + last[x]*0.8, time_text, ha="center", va="center", fontsize=7)    #course timing
                 date = "2023-09-03";
-                #CreateGoogleEvent(i,x, date)
+                CreateGoogleEvent(i,x, date)
                 x=x+1;
             elif day == ["MON"]:
                 bar_start = 1.5 - bar_width/2
@@ -214,7 +214,7 @@ if __name__ == '__main__':
                 plt.text(1.5, start[x] + last[x]/2, course_text, ha="center", va="center", fontsize=8, weight='bold')
                 plt.text(1.5, start[x] + last[x]*0.8, time_text, ha="center", va="center", fontsize=7)
                 date = "2023-09-04";
-                #CreateGoogleEvent(i,x, date)
+                CreateGoogleEvent(i,x, date)
                 x=x+1;
             elif day == ["TUE"]:
                 bar_start = 2.5 - bar_width/2
@@ -222,7 +222,7 @@ if __name__ == '__main__':
                 plt.text(2.5, start[x] + last[x]/2, course_text, ha="center", va="center", fontsize=8, weight='bold')
                 plt.text(2.5, start[x] + last[x]*0.8, time_text, ha="center", va="center", fontsize=7)
                 date = "2023-09-05";
-                #CreateGoogleEvent(i,x, date)
+                CreateGoogleEvent(i,x, date)
                 x=x+1;
             elif day == ["WED"]:
                 bar_start = 3.5 - bar_width/2
@@ -230,7 +230,7 @@ if __name__ == '__main__':
                 plt.text(3.5, start[x] + last[x]/2, course_text, ha="center", va="center", fontsize=8, weight='bold')
                 plt.text(3.5, start[x] + last[x]*0.8, time_text, ha="center", va="center", fontsize=7)
                 date = "2023-09-06";
-                #CreateGoogleEvent(i,x,date)
+                CreateGoogleEvent(i,x,date)
                 x=x+1;
             elif day == ["THU"]:
                 bar_start = 4.5 - bar_width/2
@@ -238,7 +238,7 @@ if __name__ == '__main__':
                 plt.text(4.5, start[x] + last[x]/2, course_text, ha="center", va="center", fontsize=8, weight='bold')
                 plt.text(4.5, start[x] + last[x]*0.8, time_text, ha="center", va="center", fontsize=7)
                 date = "2023-09-07";
-                #CreateGoogleEvent(i,x,date)
+                CreateGoogleEvent(i,x,date)
                 x=x+1;
         i=i+1;
 

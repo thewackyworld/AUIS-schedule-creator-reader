@@ -19,8 +19,16 @@ Using pdfplumber turn the pdf into addressable text.
 
 ```
 
+And uses google calander api to set up events from the pdf
+```python 
+    event = service.events().insert(calendarId='primary', body=event).execute()
+    print('Event created: %s' % (event.get('htmlLink')))
+```
+
 # ⬇️ Installation and running
 ---
+you will need to create your own credentials from the google api https://developers.google.com/workspace/guides/create-credentials and add the credentials.json file to the directory.
+
 run 
 ```
 git clone https://github.com/thewackyworld/AUIS-schedule-creator-reader.git
