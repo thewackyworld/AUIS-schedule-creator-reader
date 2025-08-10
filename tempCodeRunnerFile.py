@@ -1,0 +1,1 @@
+.05  # Small padding around bars
